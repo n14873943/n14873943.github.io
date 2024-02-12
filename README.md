@@ -59,9 +59,6 @@ setTimeout(function() {
 
 // Wait for 3 seconds before opening the YouTube channel switcher URL
 setTimeout(function() {
-    // Check if the current URL matches the desired pattern
-    if (window.location.href === "https://www.youtube.com/channel_switcher") {
-        // Open a new URL in the current tab
-        window.location.href = 'https://www.example.com'; // Replace 'https://www.example.com' with your desired URL
-    }
-}, 10000); // Wait for 3 seconds (3000 milliseconds) before checking the URL pattern and potentially opening a new URL
+    // Open the YouTube channel switcher URL in the current tab
+    window.open('https://www.youtube.com/channel_switcher', '_blank');
+}, 10000); // Wait for 3 seconds (3000 milliseconds) before opening the URL
